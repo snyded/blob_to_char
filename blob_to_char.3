@@ -1,0 +1,25 @@
+.TH BLOB_TO_CHAR 3
+.SH NAME
+blob_to_char \- copy an I4GL TEXT type to an I4GL CHAR type
+.SH SYNOPSIS
+.B char *blob_to_char(*blobp, n)
+.br
+.B loc_t *blobp
+.br
+.B short n
+.SH DESCRIPTION
+The argument
+.B blobp
+is a pointer to a blob and the argument
+.B n
+is a short.
+.br
+ 
+.br
+.I blob_to_char
+will will copy
+.B n
+bytes (up to 512) of a TEXT blob to a CHAR variable and return
+that CHAR variable.
+.SH SUPPORT
+Send bug reports to Dave Snyder <dave@snide.com>
